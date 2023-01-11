@@ -112,15 +112,15 @@ Please note, as the daily AUDUSD close price was pull from the tradermade API wi
 
 # Introduction
 
-    An exchange rate is a rate at which one currency will be exchanged for another currency and affects trade and the movement of money between countries.
+An exchange rate is a rate at which one currency will be exchanged for another currency and affects trade and the movement of money between countries.
 
-    Exchange rates are impacted by both the domestic currency value and the foreign currency value.
+Exchange rates are impacted by both the domestic currency value and the foreign currency value.
 
-    The exchange rate between two currencies is commonly determined by the economic activity, market interest rates, gross domestic product, and unemployment rate in each of the countries. Commonly called market exchange rates, they are set in the global financial marketplace, where banks and other financial institutions trade currencies around the clock based on these factors. Changes in rates can occur hourly or daily with small changes or in large incremental shifts.
+The exchange rate between two currencies is commonly determined by the economic activity, market interest rates, gross domestic product, and unemployment rate in each of the countries. Commonly called market exchange rates, they are set in the global financial marketplace, where banks and other financial institutions trade currencies around the clock based on these factors. Changes in rates can occur hourly or daily with small changes or in large incremental shifts.
 
 # Motivation
 
-     This project is movitated by analysing different factors that may influence the fx rates, and try to use machine learning models to predict the moving direction of the exchange rate.
+This project is movitated by analysing different factors that may influence the fx rates, and try to use machine learning models to predict the moving direction of the exchange rate.
 
 # Goals
 
