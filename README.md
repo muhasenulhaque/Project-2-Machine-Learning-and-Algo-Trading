@@ -148,27 +148,27 @@ This project is motivated by analysing different factors that may influence the 
 - `LOGISTIC REGRESSION (BEST Performance)`: When the true label is 0, 59% of the time the machine can predict it correctly;  when the true label is 1, 92% of the time the machine can predict it correctly. Also, the AUC score is 0.94, which is a nearly perfect result.
 
    Picture 1:  Normalised Confusion Matrix for Logistic Regression
-![](./Images/Normalised_Confusion_Matrix_for_Logistic_Regression.png)
+	![](./Images/Normalised_Confusion_Matrix_for_Logistic_Regression.png)
 
-   Picture 2:  ROC Curve for Logistic Regression
-![](./Images/ROC_Curve_for_Logistic_Regression.png)
+	Picture 2:  ROC Curve for Logistic Regression
+	![](./Images/ROC_Curve_for_Logistic_Regression.png)
  
 - `ADABOOST(MODERATE Performance)`: When the true label is 0, 38% of the time the machine can predict it correctly;  when the true label is 1, 87% of the time the machine can predict it correctly. The AUC score is 0.74, which is better than random guessing, but there is still room for improvement.
 
-   Picture 3:  Normalised Confusion Matrix for Adaboost Classifier
-![](./Images/Normalised_Confusion_Matrix_for_Adaboost_Classifier.png)
+	Picture 3:  Normalised Confusion Matrix for Adaboost Classifier
+	![](./Images/Normalised_Confusion_Matrix_for_Adaboost_Classifier.png)
 
 
-   Picture 4:  ROC Curve for Adaboost Classifier
-![](./Images/ROC_Curve_for_Adaboost_Classifier.png)
+	Picture 4:  ROC Curve for Adaboost Classifier
+	![](./Images/ROC_Curve_for_Adaboost_Classifier.png)
 
 - `NEURAL NETWORK(POOR Performance)`: Most of the time, regardless of the true label of 0 or 1, the model is likely to predict it as 0. Also, the AUC score is close to 0.5, which is similar to the result of random guessing.
 
-   Picture 5:  Normalised Confusion Matrix for Neural Network
-![](./Images/Normalised_Confusion_Matrix_for_Neural_Network.png)
+	Picture 5:  Normalised Confusion Matrix for Neural Network
+	![](./Images/Normalised_Confusion_Matrix_for_Neural_Network.png)
 
-   Picture 6:  ROC Curve for Neural Network
-![](./Images/ROC_Curve_for_Neural_Network.png)
+	Picture 6:  ROC Curve for Neural Network
+	![](./Images/ROC_Curve_for_Neural_Network.png)
 
 
 # Conclusions / Results
