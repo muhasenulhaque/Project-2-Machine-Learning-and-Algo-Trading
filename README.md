@@ -201,13 +201,9 @@ Below are some possible explorations we can do for further research
 
 # API and New Libraries Used
 
-## New Machine Learning Models Used
-- AdaBoost
-## New Libraries Used
-- Scikitplot : to plot the confusion metrics
-
-## New APIs Used
-- tradermade: to get historical/real-time close price for AUD/USD
+* New Machine Learning Model Used： `AdaBoost Classifier`
+* New Library Used：`Scikitplot` to plot the confusion metrics
+* New API Used: `tradermade` to get historical/real-time close price for AUD/USD
 
 
 # References
