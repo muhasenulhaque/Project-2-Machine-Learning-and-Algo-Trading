@@ -1,31 +1,32 @@
 # FX_Master
 > FinTech Project 2
 
+![](./Images/intro_readme_img.jpg)
 
-![](./IMG/intro_readme_img.jpg)
 
 
-## Group Members
+# Group Members
 
 Pauline Liu, Flora Zhao, Md Muhasenul Haque
+    
 
-## Instructions on How to Read Through the Work
+# Instructions on How to Read Through the Work
 
-**1.** Please begin with the jupyter notebook file titled `fx_master_final.ipynb` which contains the retrospective analysis which has been conducted using historical data**
+**1.** Please begin with the jupyter notebook file titled `fx_master_final.ipynb` which contains the retrospective analysis which has been conducted using historical data.
 
-**2.** The csv files for the data used in this project can be found in the folder `Resources`. **
+**2.** The csv files for the data used in this project can be found in the folder `Resources`. 
 
-**3.** The presentation may be found under the folder `Presentation`.**
+**3.** The presentation may be found under the folder `Presentation`.
 
-**4.** The images used in the README file can be found under the folder `Images`.**
+**4.** The images used in the README file can be found under the folder `Images`.
 
-**5.** In addition, for the purpose of choosing the best set of data to include in the models, we have also created two other alternative code files which contain different set of data. The file `fx_master_inflation_interest.ipynb` only used the cash rate and interest rate for Australia and the USA. The file `fx_master_inflation_interest_unemployment_indices.ipynb` added unemployment rate of Australia and the USA to the final version of code (`fx_master_final.ipynb`). The final version of code used the cash rate and interest rate for Australia and the USA in conjunction with USD index and Australian commodity price index. Please feel free to review the alternative versions of code, which can be found under the folder `Comparison`.
+**5.** In addition, for the purpose of choosing the best set of data to include in the models, we have also created two other alternative code files which contain different set of data. The file `fx_master_cash_interest.ipynb` only used the cash rate and interest rate for Australia and the USA. The file `fx_master_cash_interest_unemployment_indices.ipynb` added unemployment rate of Australia and the USA to the final version of code (`fx_master_final.ipynb`). The final version of code used the cash rate and interest rate for Australia and the USA in conjunction with USD index and Australian commodity price index. Please feel free to review the alternative versions of code, which can be found under the folder `Comparison`.
 
-## Development
+# Development
 
 This code is built in Jupyter notebook. The process must be pretty much same when executing from GitBash on WindowsPC. If you are using VSCode then the required extensions/modules can be installed from VSCode GUI. To ensure, a suitable environment is existing to execute this code, you will need to have python3 and pip3 installed already. The Python version used to write this code is 3.9.12, any verison older than version 3 might not work efficiently.
 
-## Dependencies
+# Dependencies
 
 Apart from python3 and pip3, you will need to have jupyterlab, conda, anaconda, pandas, numpy, os, tradermade, pathlib, datetime, sklearn, matplotlib, tensorflow, scikitplot, python-dotenv installed at the operating system level.
 
@@ -81,7 +82,7 @@ As mentioned above ensure python3 and pip3 are already installed - preferrable v
 
 		pip install pathlib
 
-## Execution steps
+# Execution steps
 
 To successfully execute the code...
 
@@ -110,19 +111,18 @@ In the Jupyter notebook interface, open the file 'fx_master_final.ipynb'
 
 Please note, as the daily AUDUSD close price was pull from the tradermade API with an environment file (.env) on the local machine. For the readers' convenience, the close price has been saved as a csv file and was read back to the code file. Please do not load the part where it says "SKIP LOADING THIS PART". Instead, keep going down and start loading the code below the line where it says "START LOADING FROM HERE".
 
+
 # Introduction
 
 An exchange rate is a rate at which one currency will be exchanged for another currency and affects trade and the movement of money between countries.
 
-Exchange rates are impacted by both the domestic currency value and the foreign currency value along with numerous other factors of the economies.
+Exchange rates are impacted by both the domestic currency value and the foreign currency value.
 
 The exchange rate between two currencies is commonly determined by the economic activity, market interest rates, gross domestic product, and unemployment rate in each of the countries. Commonly called market exchange rates, they are set in the global financial marketplace, where banks and other financial institutions trade currencies around the clock based on these factors. Changes in rates can occur hourly or daily with small changes or in large incremental shifts.
 
-In our project we tried to check whether the Machine Learning (ML) can cosider some of the factors to predict the movement of the fx rate. 
-
 # Motivation
 
-This project is movitated by analysing different factors that may influence the fx rates, and try to use machine learning models to predict the moving direction of the exchange rate.
+This project is motivated by analysing different factors that may influence the fx rates, and try to use machine learning models to predict the moving direction of the exchange rate.
 
 # Goals
 
@@ -147,64 +147,59 @@ This project is movitated by analysing different factors that may influence the 
 ## Model Summary
 - `LOGISTIC REGRESSION (BEST Performance)`: When the true label is 0, 59% of the time the machine can predict it correctly;  when the true label is 1, 92% of the time the machine can predict it correctly. Also, the AUC score is 0.94, which is a nearly perfect result.
 
-Picture 1:  Normalised Confusion Matrix for Logistic Regression
+   Picture 1:  Normalised Confusion Matrix for Logistic Regression
 ![](./Images/Normalised_Confusion_Matrix_for_Logistic_Regression.png)
 
-Picture 2:  ROC Curve for Logistic Regression
+   Picture 2:  ROC Curve for Logistic Regression
 ![](./Images/ROC_Curve_for_Logistic_Regression.png)
  
 - `ADABOOST(MODERATE Performance)`: When the true label is 0, 38% of the time the machine can predict it correctly;  when the true label is 1, 87% of the time the machine can predict it correctly. The AUC score is 0.74, which is better than random guessing, but there is still room for improvement.
 
-
-Picture 3:  Normalised Confusion Matrix for Adaboost Classifier
+   Picture 3:  Normalised Confusion Matrix for Adaboost Classifier
 ![](./Images/Normalised_Confusion_Matrix_for_Adaboost_Classifier.png)
 
 
-Picture 4:  ROC Curve for Adaboost Classifier
+   Picture 4:  ROC Curve for Adaboost Classifier
 ![](./Images/ROC_Curve_for_Adaboost_Classifier.png)
 
 - `NEURAL NETWORK(POOR Performance)`: Most of the time, regardless of the true label of 0 or 1, the model is likely to predict it as 0. Also, the AUC score is close to 0.5, which is similar to the result of random guessing.
 
-Picture 5:  Normalised Confusion Matrix for Neural Network
+   Picture 5:  Normalised Confusion Matrix for Neural Network
 ![](./Images/Normalised_Confusion_Matrix_for_Neural_Network.png)
 
-Picture 6:  ROC Curve for Neural Network
+   Picture 6:  ROC Curve for Neural Network
 ![](./Images/ROC_Curve_for_Neural_Network.png)
 
 
-# Conclusions 
+# Conclusions / Results
+
 - We were able to predict the moving direction of forex price change with the Logistic Regression Model at a 75% accuracy level.
 - Our original hypothesis regarding the choice of data is correct for some factors, as the data set “Inflation+Interest+Indices” give us the highest AUC, except the Neural Network Model.
 - Best Model: Logistic Regression
 - Second Best Model: Adaboost Classifier
 - Worst Model: Neural Network
-- We left unemployment rate out as it does not provide significant improvement on AUC.
+We left unemployment rate out as it does not provide significant improvement on AUC.
 
-## Difficulties Faced
+# Difficulties Faced
 
-- The forex rate of two currencies is determined by numerous factors. We tried few factors whereas had to let go many other factors affecting the exchange rate like trade news, balance of payment, war, etc. which we could not fit in the model.   
-- Different model has given different results git the same inputs. Changes in the inputs had significant impact on the prediction. 
-
-
-
-## Conclusion
-- The fx rate of two countries are determined by numerous factors. The can not be predicted precisely by any model because some of the qualitative (Subjective) factors e.g. war in Ukraine and Russia along with numerous quantitative factors e.g price of iron core (one of the major exported commodity from AU) .  
-- The best medel out of the three was the Logistic Regression Model with an accuracy of Logistic Regression 0.751
+- The forex rate of two currencies is determined by numerous factors. We tried few factors whereas had to let go many other factors affecting the exchange rate like trade news, balance of payment, war, etc. We decided which factors to keep based on comparison of AUC.
+- Oppose to what we expected, the more factors we added to the Logistic Regression Model, the lower its AUC is. So we did more research and found out that this can be due to the default algorithm (L2).
+- We had a weird result for Logistic Regression, all the “y_pred” were 1. So we reviewed the code closely, and found out that we fit in X_train instead of X_train_scaled. So we have corrected it and received a significant improvement in the result.
 
 
-## FURTHER EXPLORATION
- - Add more factors into the datasets e.g Gross Domestic Product (GDP), Gross National Income (GNI), Balance of Payment (BOP), Export & Import Figures which may influence the FX rate
+# Future Exploration
+Below are some possible explorations we can do for further research
+1. Add more factors into the datasets e.g Gross Domestic Product (GDP), Gross National Income (GNI), Balance of Payment (BOP), Export & Import Figures which may influence the FX rate
 
--  Try different split of the training/testing dataset
+2. Try different split of the training/testing dataset
 
--  Use more models for prediction, e.g. ARIMA
+3. Use more models for prediction, e.g. ARIMA
 
--  Acquire larger dataset, e.g. 20 years of data instead of 10 years and check if this can improve the accuracy of the predictions
+4. Acquire larger dataset, e.g. 20 years of data instead of 10 years and check if this can improve the accuracy of the predictions
 
--  Find enough number of features that can optimize the neural network model
+5. Find enough number of features that can optimize the neural network model
 
-
-## API and New Library
+# API and New Libraries Used
 
 ## New Machine Learning Models Used
 - AdaBoost
