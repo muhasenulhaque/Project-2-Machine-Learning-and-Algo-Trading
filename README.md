@@ -180,12 +180,23 @@ This project is motivated by analysing different factors that may influence the 
 - Worst Model: Neural Network
 We left unemployment rate out as it does not provide significant improvement on AUC.
 
+# Difficulties Faced
+
+- The forex rate of two currencies is determined by numerous factors. We tried few factors whereas had to let go many other factors affecting the exchange rate like trade news, balance of payment, war, etc. We decided which factors to keep based on comparison of AUC.
+- Oppose to what we expected, the more factors we added to the Logistic Regression Model, the lower its AUC is. So we did more research and found out that this can be due to the default algorithm (L2).
+- We had a weird result for Logistic Regression, all the “y_pred” were 1. So we reviewed the code closely, and found out that we fit in X_train instead of X_train_scaled. So we have corrected it and received a significant improvement in the result.
+
+
 # Future Exploration
 Below are some possible explorations we can do for further research
-1. Add more factors into the dataset which may influence the FX rate
+1. Add more factors into the datasets e.g Gross Domestic Product (GDP), Gross National Income (GNI), Balance of Payment (BOP), Export & Import Figures which may influence the FX rate
+
 2. Try different split of the training/testing dataset
+
 3. Use more models for prediction, e.g. ARIMA
+
 4. Acquire larger dataset, e.g. 20 years of data instead of 10 years and check if this can improve the accuracy of the predictions
+
 5. Find enough number of features that can optimize the neural network model
 
 # API and New Libraries Used
