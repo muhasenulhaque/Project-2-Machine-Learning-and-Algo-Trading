@@ -1,8 +1,8 @@
 # FX_Master
 > FinTech Project 2
 
-
 ![](./Images/intro_readme_img.jpg)
+
 
 
 # Group Members
@@ -145,36 +145,51 @@ This project is movitated by analysing different factors that may influence the 
 - Australian commodity price index
 
 ## Model Summary
-- LOGISTIC REGRESSION
-- ADABOOST
-- NEURAL NETWORK
+- `LOGISTIC REGRESSION (BEST Performance)`: When the true label is 0, 59% of the time the machine can predict it correctly;  when the true label is 1, 92% of the time the machine can predict it correctly. Also, the AUC score is 0.94, which is a nearly perfect result.
+
+Picture 1:  Normalised Confusion Matrix for Logistic Regression
+![](./Images/Normalised_Confusion_Matrix_for_Logistic_Regression.png)
+
+Picture 2:  ROC Curve for Logistic Regression
+![](./Images/ROC_Curve_for_Logistic_Regression.png)
+ 
+- `ADABOOST(MODERATE Performance)`: When the true label is 0, 38% of the time the machine can predict it correctly;  when the true label is 1, 87% of the time the machine can predict it correctly. The AUC score is 0.74, which is better than random guessing, but there is still room for improvement.
+
+
+Picture 3:  Normalised Confusion Matrix for Adaboost Classifier
+![](./Images/Normalised_Confusion_Matrix_for_Adaboost_Classifier.png)
+
+
+Picture 4:  ROC Curve for Adaboost Classifier
+![](./Images/ROC_Curve_for_Adaboost_Classifier.png)
+
+- `NEURAL NETWORK(POOR Performance)`: Most of the time, regardless of the true label of 0 or 1, the model is likely to predict it as 0. Also, the AUC score is close to 0.5, which is similar to the result of random guessing.
+
+Picture 5:  Normalised Confusion Matrix for Neural Network
+![](./Images/Normalised_Confusion_Matrix_for_Neural_Network.png)
+
+Picture 6:  ROC Curve for Neural Network
+![](./Images/ROC_Curve_for_Neural_Network.png)
 
 
 # Conclusions / Results
 
-## AdaBoost Performance
+- We were able to predict the moving direction of forex price change with the Logistic Regression Model at a 75% accuracy level.
+- Our original hypothesis regarding the choice of data is correct for some factors, as the data set “Inflation+Interest+Indices” give us the highest AUC, except the Neural Network Model.
+- Best Model: Logistic Regression
+- Second Best Model: Adaboost Classifier
+- Worst Model: Neural Network
+We left unemployment rate out as it does not provide significant improvement on AUC.
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-## Logistic Regression Performance
+# Future Exploration
+Below are some possible explorations we can do for further research
+1. Add more factors into the dataset which may influence the FX rate
+2. Try different split of the training/testing dataset
+3. Use more models for prediction, e.g. ARIMA
+4. Acquire larger dataset, e.g. 20 years of data instead of 10 years and check if this can improve the accuracy of the predictions
+5. Find enough number of features that can optimize the neural network model
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-## Neural Network Performance
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-## Difficulties Faced
-
-xxxxxxxxxxxxxxx
-
-
-
-## Conclusion
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
-
-## API and New Library
+# API and New Libraries Used
 
 ## New Machine Learning Models Used
 - AdaBoost
